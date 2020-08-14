@@ -1,0 +1,27 @@
+{
+  "name": "smart-brain-api",
+  "version": "1.0.0",
+  "description": "Detects faces through images",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "kiseop Lee",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlrltjq1004/smart-brain-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dlrltjq1004/smart-brain-api/issues"
+  },
+  "homepage": "https://github.com/dlrltjq1004/smart-brain-api#readme"
+}
