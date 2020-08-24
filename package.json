@@ -17,11 +17,10 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.21.5",
+    "nodemon": "^2.0.4",
     "pg": "^8.3.0"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dlrltjq1004/smart-brain-api.git"
