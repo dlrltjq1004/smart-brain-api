@@ -26,10 +26,10 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.send('it is working!');
 });
-app.post('/signin', signin.handleSignin(db.init(knex), bcrypt));
-app.post('/register', register.handleRegister(db.init(knex), bcrypt));
-app.get('/profile/:id', profile.handleProfile(db.init(knex)));
-app.put('/image', image.handleImage(db.init(knex)));
+app.post('/signin', signin.handleSignin(db, bcrypt));
+app.post('/register', register.handleRegister(db, bcrypt));
+app.get('/profile/:id', profile.handleProfile(db));
+app.put('/image', image.handleImage(db));
 app.post('/imageurl', image.handleApiCall());
 
 const { PORT } = process.env;
