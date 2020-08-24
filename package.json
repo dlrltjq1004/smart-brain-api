@@ -2,7 +2,7 @@
   "name": "smart-brain-api",
   "version": "1.0.0",
   "description": "Detects faces through images",
-  "main": "server.js",
+  "main": "script.js",
   "scripts": {
     "start": "node server.js"
   },

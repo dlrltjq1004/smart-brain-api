@@ -3,16 +3,20 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
-const dotenv = require('dotenv');
-
-const db = require('./module/db');
+require('dotenv').config();
 
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
-dotenv.config();
+const db = knex({
+  client: 'pg',
+  connection: {
+    host: process.env.DATABASE_URL,
+    ssl: true,
+  },
+});
 
 const app = express();
 
