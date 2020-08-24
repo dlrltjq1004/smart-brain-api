@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send(db.init(knex).users);
+  res.send('it is working!');
 });
 app.post('/signin', signin.handleSignin(db.init(knex), bcrypt));
 app.post('/register', register.handleRegister(db.init(knex), bcrypt));
