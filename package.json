@@ -4,7 +4,7 @@
   "description": "Detects faces through images",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "kiseop Lee",
